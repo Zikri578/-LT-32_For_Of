@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of - Javascript</title>
+    <script src="forOf.js"></script>
+</head>
+
+<body>
+    <script>
+        // membuat sebuah variabel org yang valuenya dalam bentuk array
+        const org = ["Google", "Facebook", "TikTok", "Shopee", "Agoda"];
+        // melakukan perulangan untuk menampilakan semua element dengan cara membuat varabel iterator telebih dahulu kemudian baru variabel org dipindahkan ke variabel iterator
+        for (const iterator of org) {
+            document.writeln(`<p>Start-up Internasional yaitu : ${iterator}</p>`)
+        };
+
+        
+        // membuat variabel fullname yang valuenya dalam bentuk string
+        let fullname = "Salsabilla Asy-Syifa Azzahra";
+        // memindahkan variabel fullname ke variabel name
+        let name;
+        // melakukan perulangan untuk menampilkan semua element 
+        for (name of fullname) {
+            // document.writeln(`<br>`);
+            document.writeln(`<p>Ejaan Nama Anda : ${name}</p>`);
+        }
+    </script>
+</body>
+
+</html>
